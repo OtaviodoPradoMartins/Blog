@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Otávio Martins</title>
+    <link rel="shortcut icon" type="image/logo.ico" href="imagem/logo.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+    
+            jQuery("#subirTopo").hide();
+    
+            jQuery('a#subirTopo').click(function() {
+                jQuery('html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+    
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function() {
+                $(".abrirProfessor1").hide();
+                $(".abrirProfessor2").hide();
+                $(".abrirProfessor3").hide();
+                $(".abrirProfessor4").hide();
+                $(".abrirProfessor5").hide();
+                $(".abrirProfessor6").hide();
+                $(".abrirProfessor7").hide();
+                $(".abrirProfessor8").hide();
+        
+                $(".professor1").click(function() {
+                    $(".abrirProfessor1").show();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor2").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").show();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor3").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor4").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").show();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor5").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor6").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").show();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor7").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").show();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor8").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").show();
+                });
+        
+                $(".professor9").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor10").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor11").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor12").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor13").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor14").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor15").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+            });
+        </script>
+        </head>
+        
+        <body class="fadeIn">
+        <section>
+            <header>
+                <nav class="ocultar">
+                    <ul class="menu1">
+                        <li><a href="index.html"><img alt="Logo" class="logo zoomimg" src="imagem/logo.png" /></a></li>
+                        <li><a href="#perfil">PERFIL</a></li>
+                        <li><a href="#fatec">FATEC</a></li>
+                        <li><a href="#disciplinas">DISCIPLINAS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<body>
+        <section>
+                <img alt="Selma Marques da Silva Fávaro" class="displayed zoomimg" src="imagem/selma.jpg " />
+                <h1>Selma</h1>
+                <p>Toda a sua formação é direcionada à área de Letras. Possui graduação pela UNESP/Assis (Licenciatura Plena em Português, Francês e Espanhol), mestrado pela UFMS/Três Lagoas (área de concentração: Estudos Linguísticos) e, atualmente, cursa
+                    doutorado, na UFMS/Três Lagoas, na mesma área. É docente efetiva da FATEC Jales,onde ministra a disciplina de Espanhol, Português e Metodologia da Pesquisa Científica. É coautora do Livro-Texto da disciplina de Espanhol do curso de
+                    Tecnologia em Processos Gerenciais, modalidade à distância, oferecido pelo Centro Paula Souza no âmbito do Programa Univesp. Suas pesquisas são direcionadas à Linguística Aplicada e a Análise do Discurso de Linha Francesa.
+                </p>
+                <h2> Disciplina: Leitura e Produção de Textos</h2>
+                <p>Ampliar o domínio da comunicação escrita e oral, por meio da aprendizagem e produção de textos existentes no âmbito acadêmico e tecnológico. Favorecer a interpretação de textos relativos à área do curso. Objetivos específicos. Produzir
+                    textos de interesse para o desenvolvimento do profissional</p>
+                <p> A disciplina de Produção de Textos me auxiliou há criar textos, relatórios, citações e curriculos. Com o conhecimento adquirido
+                melhorei meus textos, utilizando paráfrase e tópico frasal, com este conhecimento, elaborei o conteúdo deste site.</p>
+            </section>
+            <div>Artigo de Opinião</div>
+            <section>
+                <h1>Brincando com a tecnologia</h1>
+            
+                <p>Cada vez mais estamos em contato com a tecnologia diretamente ou indiretamente, mas não são só os adultos, adolescentes ou idosos, as crianças estão nascendo neste mundo com uma interação que antes não haviamos visto, assim trazendo mais
+                    problemas para a sociedade.</p>
+                <p>Médicos, psicólogos e educadores estudaram e analisaram a interação das crianças e se mostram cada vez mais preocupados. Médicos afirmam que essa interação causa vários problemas físicos e mentais, psicólogos mostram que as crianças adquirem
+                    uma ansiedade muito elevada, o que causa problemas mentais.</p>
+                <p>Pesquisa realizada pela AVG tecnologies, entrevistou 6 mil mães e revelou que as crianças de 3 a 5 anos, só no Brasil 97% ficam online, sendo que a maioria desses, 97%, ficam 5 horas por dia usando celulares, tabletes ou computadores.</p>
+                <p>Um estudo realizado pela agência de saúde pública britânica mostrou que crianças que passam muito tempo na internet no futuro podem desenvolver problemas mentais, ansiedade e agressividade, podendo também desenvolver problemas no corpo,
+                    torcicologo nos dedos, ombros e problemas na coluna.</p>
+                <p>É necessário regular essas horas que a criança fica na internet é fundamental , assim como regular o conteúdo que essa criança está em contato, como sites pornos, redes sociais, YouTube e vários outros. Assim sendo regular proibindo alguns
+                    sites e conteúdos ou regular o horário de uso, para a criança não desenvolver um problema mental ou físico, aproveitar a tecnologia para o aprendizado como sites, jogos e aplicativos pedagógicos, a tecnologia não é o problema mas sim
+                    o seu mal uso.</p>
+            </section>
+<header>
+
+</header>
+<section id="contato">
+        <div class="cimabaixo">Entre em Contato!</div>
+    </section>
+    <a>
+        <div class="container">
+            <form action="#" class="form-contact" method="post" tabindex="1">
+                <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required/>
+                <input type="email" class="form-contact-input" name="email" placeholder="Email" required/>
+                <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone"/>
+                <textarea class="form-contact-textarea" name="conteudo" style="resize: none" required></textarea>
+                <button type="submit" class="form-contact-button">Enviar</button>
+            </form>
+        </div>
+    </a>
+    </section>
+    <section class="esconderMobile">
+            <section class="fundobranco"><a href="index.html"><img alt="Logo" class="logo zoomimg padd" src="imagem/logo.png"/></a></section>
+        <input id="navbar" type='checkbox'>
+        <label for="navbar">
+            <div class="menu">
+                <span class="hamburger"></span>
+            </div>
+        </label>
+        <nav class="nav">
+        <ul>
+            <li><a href="criacao.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="ingles.html">Inglês I</a></li>
+            <li><a href="portugues.html">Leitura e Produção de Textos</a></li>
+            <li><a href="bases.html">Bases da Internet</a></li>
+            <li><a href="design.html">Design Digital</a></li>
+            <li><a href="padroes.html">Padrões de Projeto de Sítios Internet I</a></li>
+            <li><a href="logica.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="matematica.html">Fundamentos de Matemática Elementar</a></li>
+        </ul>
+    </nav>
+    </section>
+    <footer>
+            <span> {OM} Copyright &copy; Todos os direitos reservados.</span>
+        
+            <section class="esconder"> 
+            <a class="esconder" id="subirTopo">
+                <br> Topo </br>
+    
+            </a>
+        </section>
+        </footer>
+</body>
+

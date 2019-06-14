@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Otávio Martins</title>
+    <link rel="shortcut icon" type="image/logo.ico" href="imagem/logo.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+    
+            jQuery("#subirTopo").hide();
+    
+            jQuery('a#subirTopo').click(function() {
+                jQuery('html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+    
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function() {
+                $(".abrirProfessor1").hide();
+                $(".abrirProfessor2").hide();
+                $(".abrirProfessor3").hide();
+                $(".abrirProfessor4").hide();
+                $(".abrirProfessor5").hide();
+                $(".abrirProfessor6").hide();
+                $(".abrirProfessor7").hide();
+                $(".abrirProfessor8").hide();
+        
+                $(".professor1").click(function() {
+                    $(".abrirProfessor1").show();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor2").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").show();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor3").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor4").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").show();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor5").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor6").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").show();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor7").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").show();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor8").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").show();
+                });
+        
+                $(".professor9").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor10").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor11").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor12").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor13").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor14").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor15").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+            });
+        </script>
+        </head>
+        
+        <body class="fadeIn">
+        <section>
+            <header>
+                <nav class="ocultar">
+                    <ul class="menu1">
+                        <li><a href="index.html"><img alt="Logo" class="logo zoomimg" src="imagem/logo.png" /></a></li>
+                        <li><a href="#perfil">PERFIL</a></li>
+                        <li><a href="#fatec">FATEC</a></li>
+                        <li><a href="#disciplinas">DISCIPLINAS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<body>
+<section>
+                <img alt="Fabiana Pupin Masson Caravieri " class="displayed zoomimg" src="imagem/fabiana.jpg" />
+                <h1>Fabiana</h1>
+                <p>Mestranda em Ciência da Computação - Área de Concentração: Engenharia de Software e Banco de Dados - Universidade Estadual Paulista "Júlio de Mesquita Filho " - UNESP - São José do Rio Preto/SP. Possui Graduação em Tecnologia em Processamento
+                    de Dados pela Faculdade de Tecnologia da Alta Noroeste (Salesiano) de Araçatuba/SP. Especialização "Lato Sensu " em Computação pela UFSCar e Fundação Educacional de Fernandópolis. Licenciatura Plena em Informática pela Fatec Sorocaba.
+                    Professora do Curso Superior em Sistemas para Internet, com as disciplinas: Design Digital, Prática de Design e Engenharia de Software para Web e do Curso Superior em Gestão Empresarial da disciplina de Sistemas de Informação.
+                    Responsável pelos projetos "Click Melhor Idade " e Artes Gráficas da Fatec de Jales. Professora do Curso Técnico em Informática Integrado ao Ensino Médio da ETEC "Dr. José Luiz Viana Coutinho " de Jales (Centro Estadual de Educação
+                    Tecnológica Paula Souza) Experiência na área de Ciência da Computação, atuando nos seguimentos: informática, educação técnica e superior, EAD e consultoria.</p>
+                <h2>Disciplina: Design Digital</h2>
+                <p>Apresentar as bases do design gráfico de produção de sítios Internet com emprego de softwares. Projetar mock-ups (cenas) usando o software de design digital, em seguida implementar o projeto como um sítio Internet. Identificar os principais
+                    componentes dos softwares para design gráfico: espaço de trabalho, canvas, painéis, ferramentas e menus. Definir padrões de cores e empregá-los em esquemas de cores. Definir, descrever e empregar os elementos de artes gráficas:
+                    o ponto, a linha, a forma, a direção, o tom, a cor, a textura, a dimensão, a escala e o movimento. Projetar logos e marcas. Desenvolver um logo para própria página. Descrever e utilizar camadas. Otimizar organização de arquivos
+                    para trabalho em equipe. Conhecer e empregar os padrões de gravação de arquivos de imagem. Escolher o programa mais adequado para tratamento de imagens. Definir e criar um guia com os quatro elementos básicos de qualquer sítio
+                    (cabeçalhos, navegação, conteúdo e rodapé) com aplicação de padrões de design, esquemas de cores e fontes tipográficas. Projetar vários estados de interação e comportamento. Criar um sítio completo com várias páginas com todos
+                    os elementos de design, HTML e CSS estudados no curso. Empregar os padrões de resolução de tela e impressão e saber converter medidas aplicadas ao desenvolvimento de sítios para Internet. Calcular tamanhos seguros dos layouts dos
+                    sítios Internet.
+                </p>
+
+            </section>
+            <section>
+                <div>Feito em aula!</div>
+                <div>
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/2.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/3.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/6.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/10.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/24.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/25.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/7.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/9.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/8.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/19.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/20.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/12.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/13.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/14.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/15.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/5.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/1.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/16.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/17.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/18.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/21.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/22.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/23.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/4.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/provedor.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg " src="imagem/hospital.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/bolachitas.png " />
+                    <img alt="Aprendizado " class="exercicios zoomimg" src="imagem/tenis.png " />
+
+                </div>
+            </section>
+
+<header>
+
+</header>
+<section id="contato">
+        <div class="cimabaixo">Entre em Contato!</div>
+    </section>
+    <a>
+        <div class="container">
+            <form action="#" class="form-contact" method="post" tabindex="1">
+                <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required/>
+                <input type="email" class="form-contact-input" name="email" placeholder="Email" required/>
+                <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone"/>
+                <textarea class="form-contact-textarea" name="conteudo" style="resize: none" required></textarea>
+                <button type="submit" class="form-contact-button">Enviar</button>
+            </form>
+        </div>
+    </a>
+    </section>
+    <section class="esconderMobile">
+            <section class="fundobranco"><a href="index.html"><img alt="Logo" class="logo zoomimg padd" src="imagem/logo.png"/></a></section>
+        <input id="navbar" type='checkbox'>
+        <label for="navbar">
+            <div class="menu">
+                <span class="hamburger"></span>
+            </div>
+        </label>
+        <nav class="nav">
+        <ul>
+            <li><a href="criacao.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="ingles.html">Inglês I</a></li>
+            <li><a href="portugues.html">Leitura e Produção de Textos</a></li>
+            <li><a href="bases.html">Bases da Internet</a></li>
+            <li><a href="design.html">Design Digital</a></li>
+            <li><a href="padroes.html">Padrões de Projeto de Sítios Internet I</a></li>
+            <li><a href="logica.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="matematica.html">Fundamentos de Matemática Elementar</a></li>
+        </ul>
+    </nav>
+    </section>
+    <footer>
+            <span> {OM} Copyright &copy; Todos os direitos reservados.</span>
+        
+            <section class="esconder"> 
+            <a class="esconder" id="subirTopo">
+                <br> Topo </br>
+    
+            </a>
+        </section>
+        </footer>
+</body>
+

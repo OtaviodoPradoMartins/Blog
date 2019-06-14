@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Otávio Martins</title>
+    <link rel="shortcut icon" type="image/logo.ico" href="imagem/logo.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+    
+            jQuery("#subirTopo").hide();
+    
+            jQuery('a#subirTopo').click(function() {
+                jQuery('html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+    
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function() {
+                $(".abrirProfessor1").hide();
+                $(".abrirProfessor2").hide();
+                $(".abrirProfessor3").hide();
+                $(".abrirProfessor4").hide();
+                $(".abrirProfessor5").hide();
+                $(".abrirProfessor6").hide();
+                $(".abrirProfessor7").hide();
+                $(".abrirProfessor8").hide();
+        
+                $(".professor1").click(function() {
+                    $(".abrirProfessor1").show();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor2").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").show();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor3").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor4").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").show();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor5").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor6").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").show();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor7").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").show();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor8").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").show();
+                });
+        
+                $(".professor9").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor10").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor11").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor12").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor13").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor14").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor15").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+            });
+        </script>
+        </head>
+        
+        <body class="fadeIn">
+        <section>
+            <header>
+                <nav class="ocultar">
+                    <ul class="menu1">
+                        <li><a href="index.html"><img alt="Logo" class="logo zoomimg" src="imagem/logo.png" /></a></li>
+                        <li><a href="#perfil">PERFIL</a></li>
+                        <li><a href="#fatec">FATEC</a></li>
+                        <li><a href="#disciplinas">DISCIPLINAS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<body>
+  <section>
+
+                <img alt="Alexandre Bernardes" class="displayed zoomimg" src="imagem/alexandre.jpg " />
+                <h1>Alexandre</h1>
+
+                <p>Mestre em Ciência da Computação na Universidade Estadual Paulista Júlio de Mesquita Filho, UNESP de São José do Rio Preto (2011). Possui graduação em Tecnologia em Processamento de Dados pela Universidade Paulista (1998), especialização
+                    em Desenvolvimento de Sistemas Sob a Tecnologia Cliente/Servidor e Internet pelo Centro Universitário de Rio Preto (2002) e formação pedagógica para docente pela Faculdade de Tecnologia de Sorocaba (2008). É Professor e Coordenador
+                    da Faculdade de Tecnologia de Jales Prof. José Camargo - FATEC e Professor da Escola Técnica de Fernandópolis - ETEC Prof. Armando José Farinazzo. Tem experiência na área de Ciência da Computação, com ênfase em Processamento de Imagens
+                    e Visão Computacional. Conhecedor das áreas de Banco de Dados, Desenvolvimento de Sites, Engenharia de Software, Algoritmos e Estrutura de Dados.
+                </p>
+                <h2> Disciplina: Padrões de Projetos de Sítios de Internet I </h2>
+                <p>Apresentar os fundamentos do HTML (Hypertext Markup Language) com ênfase na semântica do uso dos elementos e nos benefícios do emprego de padrões de codificação. Demonstrar uso do CSS (Cascading Style Sheets) para separar conteúdo e apresentação,
+                    de maneira a minimizar tempo de manutenção, aumentar a velocidade do desenvolvimento e desenvolver as habilidades de design. Objetivos específicos. Os estudantes deverão ser capazes de: construir páginas Web por meio do HTML e validá-las
+                    no validador do W3C, quando for o caso. Empregar o CSS para todas as apresentações. Criar uma estrutura de diretórios adequada para sítios Internet visando a facilidade de manutenção. Saber empregar FTP para transferir arquivos para
+                    o servidor. Construir formulários de contato. Empregar um script fornecido. Criar um sítio completo com várias páginas com todos os elementos de design, HTML e CSS estudados no curso </p>
+            </section>
+<header>
+
+</header>
+<section id="contato">
+        <div class="cimabaixo">Entre em Contato!</div>
+    </section>
+    <a>
+        <div class="container">
+            <form action="#" class="form-contact" method="post" tabindex="1">
+                <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required/>
+                <input type="email" class="form-contact-input" name="email" placeholder="Email" required/>
+                <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone"/>
+                <textarea class="form-contact-textarea" name="conteudo" style="resize: none" required></textarea>
+                <button type="submit" class="form-contact-button">Enviar</button>
+            </form>
+        </div>
+    </a>
+    </section>
+    <section class="esconderMobile">
+            <section class="fundobranco"><a href="index.html"><img alt="Logo" class="logo zoomimg padd" src="imagem/logo.png"/></a></section>
+        <input id="navbar" type='checkbox'>
+        <label for="navbar">
+            <div class="menu">
+                <span class="hamburger"></span>
+            </div>
+        </label>
+        <nav class="nav">
+        <ul>
+            <li><a href="criacao.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="ingles.html">Inglês I</a></li>
+            <li><a href="portugues.html">Leitura e Produção de Textos</a></li>
+            <li><a href="bases.html">Bases da Internet</a></li>
+            <li><a href="design.html">Design Digital</a></li>
+            <li><a href="padroes.html">Padrões de Projeto de Sítios Internet I</a></li>
+            <li><a href="logica.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="matematica.html">Fundamentos de Matemática Elementar</a></li>
+        </ul>
+    </nav>
+    </section>
+    <footer>
+            <span> {OM} Copyright &copy; Todos os direitos reservados.</span>
+        
+            <section class="esconder"> 
+            <a class="esconder" id="subirTopo">
+                <br> Topo </br>
+    
+            </a>
+        </section>
+        </footer>
+</body>
+

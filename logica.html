@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Otávio Martins</title>
+    <link rel="shortcut icon" type="image/logo.ico" href="imagem/logo.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+    
+            jQuery("#subirTopo").hide();
+    
+            jQuery('a#subirTopo').click(function() {
+                jQuery('html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+    
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                } else {
+                    jQuery('#subirTopo').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function() {
+                $(".abrirProfessor1").hide();
+                $(".abrirProfessor2").hide();
+                $(".abrirProfessor3").hide();
+                $(".abrirProfessor4").hide();
+                $(".abrirProfessor5").hide();
+                $(".abrirProfessor6").hide();
+                $(".abrirProfessor7").hide();
+                $(".abrirProfessor8").hide();
+        
+                $(".professor1").click(function() {
+                    $(".abrirProfessor1").show();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor2").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").show();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor3").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor4").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").show();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor5").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor6").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").show();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor7").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").show();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor8").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").show();
+                });
+        
+                $(".professor9").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor10").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").hide();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").show();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+        
+                $(".professor11").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor12").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor13").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor14").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+                $(".professor15").click(function() {
+                    $(".abrirProfessor1").hide();
+                    $(".abrirProfessor2").hide();
+                    $(".abrirProfessor3").show();
+                    $(".abrirProfessor4").hide();
+                    $(".abrirProfessor5").hide();
+                    $(".abrirProfessor6").hide();
+                    $(".abrirProfessor7").hide();
+                    $(".abrirProfessor8").hide();
+                });
+            });
+        </script>
+        </head>
+        
+        <body class="fadeIn">
+        <section>
+            <header>
+                <nav class="ocultar">
+                    <ul class="menu1">
+                        <li><a href="index.html"><img alt="Logo" class="logo zoomimg" src="imagem/logo.png" /></a></li>
+                        <li><a href="#perfil">PERFIL</a></li>
+                        <li><a href="#fatec">FATEC</a></li>
+                        <li><a href="#disciplinas">DISCIPLINAS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<body>
+         <section>
+                <img alt="Ligia Rodrigues Prete" class="displayed zoomimg" src="imagem/ligiaa.jpg " />
+                <h1>Ligia</h1>
+                <p>Possui Graduação em Processamento de Dados pela Universidade Paulista (1999). Pós-Graduação Lato Sensu em Informática na área de concentração em Desenvolvimento de Sistemas sob a Tecnologia Cliente/Servidor e Internet pelo Centro Universitário
+                    de Rio Preto (2001). Licenciatura Plena em Informática pelo Programa Especial de Formação Pedagógica de Docentes para as Disciplinas do Currículo da Educação Profissional de Nível Médio do Centro Estadual de Educação Tecnológica
+                    Paula Souza (2008). Pós-Graduação Stricto Sensu (Mestrado) em Engenharia Elétrica na área de concentração em Automação pela Universidade Estadual Paulista Júlio de Mesquita Filho (2011). Pós-Graduação Stricto Sensu (Doutorado)
+                    em Engenharia Elétrica na área de concentração em Automação pela Universidade Estadual Paulista Júlio de Mesquita Filho (2016). Atualmente é docente do Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS) na Faculdade
+                    de Tecnologia de Jales "Professor José Camargo ". Tem experiência na área de Ciência da Computação, com ênfase em desenvolvimento de sistemas, atuando principalmente nos seguintes temas: programação, banco de dados, redes e automação.</p>
+                <h2> Disciplina: Algoritmos e Lógica de Programação </h2>
+                <p> Iniciar a formação em programação de computadores por meio de uma linguagem facilitadora do aprendizado de algoritmos , preferencialmente alguma uma linguagem de amplo emprego no mercado. Desenvolver as habilidades básicas de programação
+                    de computadores aplicando os conceitos estudados.</p>
+            </section>
+<header>
+
+</header>
+<section id="contato">
+        <div class="cimabaixo">Entre em Contato!</div>
+    </section>
+    <a>
+        <div class="container">
+            <form action="#" class="form-contact" method="post" tabindex="1">
+                <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required/>
+                <input type="email" class="form-contact-input" name="email" placeholder="Email" required/>
+                <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone"/>
+                <textarea class="form-contact-textarea" name="conteudo" style="resize: none" required></textarea>
+                <button type="submit" class="form-contact-button">Enviar</button>
+            </form>
+        </div>
+    </a>
+    </section>
+    <section class="esconderMobile">
+            <section class="fundobranco"><a href="index.html"><img alt="Logo" class="logo zoomimg padd" src="imagem/logo.png"/></a></section>
+        <input id="navbar" type='checkbox'>
+        <label for="navbar">
+            <div class="menu">
+                <span class="hamburger"></span>
+            </div>
+        </label>
+        <nav class="nav">
+        <ul>
+            <li><a href="criacao.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="ingles.html">Inglês I</a></li>
+            <li><a href="portugues.html">Leitura e Produção de Textos</a></li>
+            <li><a href="bases.html">Bases da Internet</a></li>
+            <li><a href="design.html">Design Digital</a></li>
+            <li><a href="padroes.html">Padrões de Projeto de Sítios Internet I</a></li>
+            <li><a href="logica.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="matematica.html">Fundamentos de Matemática Elementar</a></li>
+        </ul>
+    </nav>
+    </section>
+    <footer>
+            <span> {OM} Copyright &copy; Todos os direitos reservados.</span>
+        
+            <section class="esconder"> 
+            <a class="esconder" id="subirTopo">
+                <br> Topo </br>
+    
+            </a>
+        </section>
+        </footer>
+</body>
+
