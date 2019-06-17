@@ -311,6 +311,30 @@ p{
 }
 	
 @media (min-width: 968px){
+    #subirTopo {
+    text-decoration: none;
+    background: #f1f1f1;
+    bottom: 70px;
+    right: 30px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border: 0;
+    font-family: sans-serif;
+    opacity: .8;
+    border-radius: 8px;
+}
+
+#subirTopo:hover {
+    opacity: 1;
+    color: #ababab;
+}
+
     .zoomimg{
         overflow: hidden;
     }
@@ -509,6 +533,10 @@ p{
 }
 
 @media (min-width: 1200px){
+    #subirTopo {
+    background: black;
+    color: white;
+}
     .grid{
         width: 20%;
     }
