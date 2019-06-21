@@ -1,81 +1,115 @@
-﻿body{
-    margin: 0;
+﻿/* MENU DO MOBILE */
+/* fundobranco é a barra "retangular" do menu mobile */
+/* Inputs são responsáveis pelas transições do menu Hamburguer se retirar não funciona */
+/* nav.span é para deixar o texto do menu no centro */
+/* a é para deixar o texto fixado e colocar a cor */
+/* nav é a transição do efeito do botão, que faz um plano branco se sobresair sobre a página */
+/* menu é as configurações para o botão ser clicável e não somente ser uma label */
+/* #navbar é para ocultar o quadrado do label */
+/* Hamburguer (s) são as 3 barras do menu e fazem a sua movimentação */
+
+.fundobranco{
+    width: 100%;
+    height: 0 auto;
+    padding-top: 20px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: white;
 }
-#disciplinas{
-    margin-top: 2vh; 
+.nav{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vh;
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+    visibility: hidden;
+    z-index: 2;
+    padding: 0;
 }
-    .logo{
-        display: block;
-    }
-    .logo1{
-        display: none;
-    }
-    .logo2{
-        display: none;
-    }
-/* MENU DO MOBILE */
+li{
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    margin-top: 5vh;
+    text-align: center;
+    padding: 0;
+}
+nav,span{
+    text-align: center;
+}
+a{
+    color: black;
+    display: fixed;
+    text-decoration: none;
+}
 #navbar{
     display: none;
 }
-.bordacima{
-    display: none;
+.menu{
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+    top: 4px;
+    left: 5px;
+    position: fixed;
+    transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
+    width: 80px;
+    height: 50px;
+    z-index: 2;
 }
-div{
-    text-align: center;
-    text-align: center;
-    color: black;
-    font-family: "Arial";
-    font-size: 135%;
-    font-weight: bold;
-    padding-top: 4vh;
+.hamburger{
+    position: relative;
+    top: 24px;
+    left: 25px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+.hamburger:after,
+.hamburger:before{
+    background: #000;
+    content: "";
+    display: block;
+    transition: .5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hamburger:before{
+    top: -10px;
+}
+.hamburger:after{
+     bottom: -10px;
+}
+ input:checked ~ label .menu{
+    box-shadow: 0 0 0 300vw #FFF, 0 0 0 130vh #FFF;
+}
+input:checked ~ label .hamburger{
+    transform: rotate(45deg);
+}
+input:checked ~ label .hamburger:after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+input:checked ~ label .hamburger:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+input:checked ~ nav{
+    opacity: 1;
+    visibility: visible;
 }
 
-    .menu {
-        background: #FFF;
-        border-radius: 50%;
-        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        position: fixed;
-        transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
-        width: 77px;
-        height: 18px;
-        z-index: 2;
-    }
-
-    .hamburger {
-        position: relative;
-        top: 0px;
-        left:23px;
-        width: 30px;
-        height: 2px;
-        background: #000;
-        display: block;
-        transform-origin: center;
-        transition: .5s ease-in-out;
-    }
-
-    .hamburger:after,
-    .hamburger:before {
-        background: #000;
-        content: "";
-        display: block;
-        transition: .5s ease-in-out;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    .hamburger:before {
-        top: -10px;
-    }
-
-    .hamburger:after {
-        bottom: -10px;
-    }
-
-   /* HEADER */
+/* HEADER */
+/*header, formatação da imagem de plano de fundo */
 header{
     height: 550px;
     height: 55vh;
@@ -93,7 +127,9 @@ header{
     align-items: center;
     padding: 0px;
 }
+
 /* FOOTER */
+/* formatação do texto e cor de fundo do footer */
 footer{
     text-align: center;
     padding: 0.5%;
@@ -103,17 +139,17 @@ footer{
 }
 
 /* CONTATO */
-.container {
+/* Simples de entender */
+
+.container{
     width: 80%;
     margin: 0 auto;
 }
-
-.form-contact {
+.form-contact{
     width: 100%;
     font-family: "Arial";
 }
-
-.form-contact-input {
+.form-contact-input{
     width: 100%;
     color: #292929;
     background-color: #E9E9E9;
@@ -127,8 +163,7 @@ footer{
     border-left: 1px solid #ccc;
     text-indent: 20px;
 }
-
-.form-contact-textarea {
+.form-contact-textarea{
     width: 100%;
     color: #292929;
     background-color: #E9E9E9;
@@ -147,7 +182,7 @@ footer{
     font-family: "Arial";
 }
 
-.form-contact-button {
+.form-contact-button{
     width: 100%;
     border-radius: 4px;
     color: black;
@@ -163,42 +198,36 @@ footer{
     transition: 1s;
 }
 
-/* BORDAS */
-.bordacima{
-    border-top: 1% solid #E9E9E9;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    margin: 0;
-    clear: both;
-} 
-.selminha{
-    border: 1% solid #E9E9E9;
-    margin: 1%;
-    padding: 0%;
-    clear: both;
-}
 /* FORMATAÇÂO DO TEXTO */
+/* cimabaixo, espaçando em cima e embaixo do entre em contato na area de contato */
+/* h1,h2,h3 formatação dos titulos */
+/* distancia é a formatação do texto na matéria de português */
+/* div formatação do texto */
+/* p, formatação dos parágrafos */
+/* span, formatação do tamanho das letras do span */
+/* tirar a formatação do google chrome */
 .cimabaixo{
     margin-top: 5%;
+    margin-bottom: 1%;
 }
-.displayed{
-    float: left;
-	border-radius: 30px 30px 30px 30px;
+body{
+    margin: 0;
 }
-/* FORMATAÇÃO DE IMAGENS */
-h1{
+h1, h2, h3{
+    font-family: "Arial";
+    font-size: 125%;
     text-align: center;
-    padding-top: 1%;
-    font-size: 170%;
-}
-h2{
-    text-align: center;
-    font-size: 170%;
-    padding-bottom: 1%;
-    padding-top: 1%;
+}  
+.distancia{
+    line-height: 150%;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 div{
+    text-align: center;
+    text-align: center;
+    color: black;
+    font-family: "Arial";
     font-size: 135%;
     font-weight: bold;
 }
@@ -212,106 +241,81 @@ p{
     padding-bottom: 1%;
     padding-left: 8%;
     padding-right: 8%;
+    font-size:120%;
 }
-
-/* OCULTANDO BOTÃO PARA VOLTAR AO TOPO */
-.esconder{
-    display: none;
-}
-.ocultar{
-    display: none;
-}
-/* CONFIGURAÇÔES SOLTAS */
-.seila{
+span{
     text-align: center;
-}
-.blockede{
-    display: inline-block;
-}
-.baixo{
-    clear: both;
+    font-size: 110%;
 }
 
-
-    input:checked ~ label .menu {
-        box-shadow: 0 0 0 300vw #FFF, 0 0 0 130vh #FFF;
-    }
-
-    input:checked ~ label .hamburger {
-        transform: rotate(45deg);
-    }
-
-    input:checked ~ label .hamburger:after {
-        transform: rotate(90deg);
-        bottom: 0;
-    }
-
-    input:checked ~ label .hamburger:before {
-        transform: rotate(90deg);
-        top: 0;
-    }
-
-    input:checked ~ nav {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3.5vh;
-        opacity: 0;
-        transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
-        visibility: hidden;
-        z-index: 2;
-        padding: 0;
-    }
-    li{
-        list-style: none;
-        list-style-type: none;
-        list-style-position: initial;
-        list-style-image: initial;
-        margin-top: 5vh;
-        text-align: center;
-        padding: 0;
-    }
-    nav,span{
-        text-align: center;
-    }
-    a {
-        color: black;
-        display: fixed;
-        text-decoration: none;
-        text-align: center;
-    }
-    .fundobranco{
-        width: 100%;
-        height: 6.9%;
-        padding-top: 20px;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        background-color: white;
-    }
-   .logo{
+/* FORMATAÇÃO DE IMAGENS */
+/* #imagens img são as imagens da fabiana de design */
+/* displayed, formatação das fotos dos professores */
+/* logo, formatação do logo dos logos */
+#imagens img{
+    margin: 0 auto;
+    width: 100%;
+     height: 70%;
+}
+.displayed{
+    float:left;
+    width: 98%;
+    padding: 0;
+    height: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    border-radius: 30px 30px 30px 30px;
+}
+.logo{
     width: 90px;
     margin-top: 0.2%;
-    margin-bottom: 0.2%;
+    margin-bottom: 1.5%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-	
-@media (min-width: 320px){
-	p{
-		
-	}
 }
-	
+
+/* OCULTANDO */
+/* logo, logo1 ou logo2 são as escolhas de ocultar as imagens dos logos, para escolher qual versão para qual resolução */
+/* ocultar1 é para esconder os menus da resolução desktop */
+.logo{
+    display: block;
+}
+.logo1{
+     display: none;
+}
+.logo2{
+     display: none;
+}
+.ocultar1{
+    display: none;
+}
+
 @media (min-width: 968px){
-    #subirTopo {
+/* Formatação de texto */
+h1, h2, h3{
+    text-align: justify;
+    color: black;
+    margin: 0px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-indent: 4%;
+}
+.distancia{
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+footer, span{
+    font-size: 105%;
+    background-color: #c8c8c8;
+    color: black;
+}
+
+/* subirtopo configuração do botão de voltar ao topo na versão desktop */
+#subirTopo {
     text-decoration: none;
     background: #f1f1f1;
     bottom: 70px;
@@ -329,382 +333,345 @@ p{
     opacity: .8;
     border-radius: 8px;
 }
-
 #subirTopo:hover {
     opacity: 1;
     color: #ababab;
 }
 
-    .zoomimg{
-        overflow: hidden;
-    }
-    .zoomimg{
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-    .zoomimg:hover{
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    .logo{
-        display: none;
-    }
-    .logo1{
-    display: block;
-    width: 110px;
-    margin-top: 0.2%;
-    margin-bottom: 0.8%;
-    display: block;
-    margin-left: 28px;
+/* zomming é o zoom nas imagens */
+.zoomimg{
+    overflow: hidden;
+}
+.zoomimg{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.zoomimg:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.logo{
+    display: none;
+}
+.logo1{
+display: block;
+width: 110px;
+margin-top: 0.2%;
+margin-bottom: 0.8%;
+display: block;
+margin-left: 28px;
+}
+.logo2{
+    display: none;
+}
+.displayed{
+    width: 30%;
+    margin-left: 8vw;
+    margin-right: 1vw;
+    margin-bottom: 0vh;
+    margin-top: 11vh;
+}
 
-    }
-    .logo2{
-        display: none;
-    }
-    .displayed{
-        width: 30%;
-        margin-left: 8vw;
-        margin-top: 14.5vh;
-        margin-right: 1vw;
-        margin-bottom: 0px;
-        padding: 0;
-        height: auto;
-    }
-     #imagens div{
-        display: grid;
-        grid-template-rows: 10vh 10vh 10vh 10vh;
-        margin-left: 8vw;
-        margin-right: 8vw;
-        grid-template-areas: "exercicio1 exercicio2 exercicio3 exercicio4"" exercicio5 exercicio6 exercicio7 exercicio8"" exercicio9 exercicio10 exercicio11 exercicio12"" exercicio13 exercicio14 exercicio15 exercicio16";
-    }
-    #imagens img{
-        margin: 0 auto;
-        width: 40%;
-        height: 80%;
-    }
-    .exercicio1{
-        grid-area: exercicio1;
-    }
-    .exercicio2{
-        grid-area: exercicio2;
-    }
-    .exercicio3{
-        grid-area: exercicio3;
-    }
-    .exercicio4{
-        grid-area: exercicio4;
-    }
-    .exercicio5{
-        grid-area: exercicio5;
-    }
-    .exercicio6{
-        grid-area: exercicio6;
-    }
-    .exercicio7{
-        grid-area: exercicio7;
-    }
-    .exercicio8{
-        grid-area: exercicio8;
-    }
-    .exercicio9{
-        grid-area: exercicio9;
-    }
-    .exercicio10{
-        grid-area: exercicio10;
-    }
-    .exercicio11{
-        grid-area: exercicio11;
-    }
-    .exercicio12{
-        grid-area: exercicio12;
-    }
-    .exercicio13{
-        grid-area: exercicio13;
-    }
-    .exercicio14{
-        grid-area: exercicio14;
-    }
-    .exercicio15{
-        grid-area: exercicio15;
-    }
-    .exercicio16{
-        grid-area: exercicio16;
-    }
-     .menu1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        top: 0%;
-        position: absolute;
-        width: 100%;
-        height: 6vh;
-        font-size: 135%;
-        background-color: #c8c8c8;
-    }
-    ul{
-        list-style: none;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 70%;
-        margin: 0px;
-    }
-    ul li{
-        text-align: center;
-        width: 100%;
-        padding-left: 1vw;
-        margin-top: 0;
-    }
-    ul li a{
-        display: inline-block;
-        padding: 0px 0;
-        text-decoration: none;
-        color: black;
-        padding-left: 1%;
-        padding-top: 2vh;
-        color: black;
-        margin-bottom: 0;
-    }
-    .menu2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        height: 6vh;
-        font-size: 135%;
-        background-color: #c8c8c8;
-    }
-    .menu2 ul li a{
-        width: 100%;
-        list-style: none;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-        display: inline-block;
-        padding: 0px 0;
-        text-decoration: none;
-        color: black;
-    }
-        /* Bordas*/
-    footer, span{
-        font-size: 105%;
-        background-color: #c8c8c8;
-        color: black;
-    }
-    .container {
-    width: 80%;
-    }
-    .esconder{
-        display: block;
-    }
-     .esconderMobile{
-        display: none;
-    }
-    .ocultar{
-        display: block;
-    }
-     .form-contact-input{
-        color: black;
-        background-color: #c8c8c8;
-        border: 1px solid #c8c8c8;
-        border-bottom: 1px solid #c8c8c8;
-        border-left: 1px solid #c8c8c8;
-    }
-    .form-contact-textarea{
-        color: black;
-        background-color: #c8c8c8;
-        border: 1px solid #c8c8c8;
-        border-bottom: 1px solid #c8c8c8;
-        border-left: 1px solid #c8c8c8;
-    }
-    .form-contact-button{
-        color: black;
-        background: #c8c8c8;
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-        font-size: 20px;
-    }
+/* grid nas imagens da fabiana */
+#imagens div{
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    grid-template-areas: "exercicio1 exercicio2 exercicio3 exercicio4"" exercicio5 exercicio6 exercicio7 exercicio8"" exercicio9 exercicio10 exercicio11 exercicio12"" exercicio13 exercicio14 exercicio15 exercicio16";
+}
+#imagens img{
+    margin: 0 auto;
+    width: 60%;
+    height: 90%;
+}
+.exercicio1{
+    grid-area: exercicio1;
+}
+.exercicio2{
+    grid-area: exercicio2;
+}
+.exercicio3{
+    grid-area: exercicio3;
+}
+.exercicio4{
+    grid-area: exercicio4;
+}
+.exercicio5{
+    grid-area: exercicio5;
+}
+.exercicio6{
+    grid-area: exercicio6;
+}
+.exercicio7{
+    grid-area: exercicio7;
+}
+.exercicio8{
+    grid-area: exercicio8;
+}
+.exercicio9{
+    grid-area: exercicio9;
+}
+.exercicio10{
+    grid-area: exercicio10;
+}
+.exercicio11{
+    grid-area: exercicio11;
+}
+.exercicio12{
+    grid-area: exercicio12;
+}
+.exercicio13{
+    grid-area: exercicio13;
+}
+.exercicio14{
+    grid-area: exercicio14;
+}
+.exercicio15{
+    grid-area: exercicio15;
+}
+.exercicio16{
+    grid-area: exercicio16;
+}
+
+/* Formatação dos menus */
+.menu1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 0 auto;
+    font-size: 135%;
+    background-color: #c8c8c8;
+}
+ul{
+    list-style: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: 0px;
+}
+ul li{
+    text-align: center;
+    width: 100%;
+    padding-left: 1vw;
+    margin-top: 0;
+}
+ul li a{
+    display: inline-block;
+    padding: 0px 0;
+    text-decoration: none;
+    color: black;
+    padding-left: 1%;
+    padding-top: 2vh;
+    color: black;
+    margin-bottom: 0;
+}
+.menu2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 135%;
+    background-color: #c8c8c8;
+}
+.menu2 ul li a{
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: inline-block;
+    padding: 0px 0;
+    text-decoration: none;
+    color: black;
+}
+
+/*tirando a versão mobile */
+.esconder{
+    display: block;
+}
+.esconderMobile{
+    display: none;
+}
+.ocultar1{
+    display: block;
+}
+
+/* mudando as cores da área de contato */
+.form-contact-input{
+    color: black;
+    background-color: #c8c8c8;
+    border: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+}
+.form-contact-textarea{
+    color: black;
+    background-color: #c8c8c8;
+    border: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+}
+.form-contact-button{
+    color: black;
+    background: #c8c8c8;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 20px;
+ }
 }
 
 @media (min-width: 1200px){
-    #subirTopo {
-    background: black;
-    color: white;
+header{
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
 }
-    .grid{
-        width: 20%;
-    }
-    .displayed{
-        width: 80%;
-        margin-right: 1vw;
-        margin-bottom: 0px;
-        padding: 0;
-        height: 20%;
-        margin-left: 8vw;
-        margin-top: 0vh;
-    }
-    .logo{
-        display: none;00000000000000000
-    }
-    .logo1{
-        display: none;
-    }
-    .logo2{
+
+/* zoom */
+.zoomimg:hover{
+    -moz-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+}
+
+/* Imagens */
+.grid{
+    max-width: 60%;
+}
+.container {
+    width: 30%;
+}
+.displayed{
+    max-width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 0.5vh;
+}
+.logo{
+    display: none;
+}
+.logo1{
+    display: none;
+}
+.logo2{
     display: block;
     width: 110px;
     margin-top: 0.2%;
     margin-bottom: 0.8%;
     display: block;
     margin-left: 28px;
-    }
-    ul li a{
-        color: white;
-    }
-    .menu1{
-        background-color: black;
-    }
-    .menu2 {
-        background-color: black;
-    }
-     .menu2 ul li a{
-        color: white;
-    }
-    .container {
-    width: 50%;
-    }
-    span{
-        text-align: center;
-        font-size: 155%;
-    }
-    .esconderMobile{
-        display: none;
-    }
-    .esconder{
-        display: block;
-    }
-    .nav{
-        display: none;
-    }
-    .top{
-    padding-top: 0vh;
-    padding-bottom: 2vh;
-    }
-/* Ocultar algumas coisa do mobile*/
-    .bordacima{
-        display: block;
-    }
-    .container{
-        width: 50%;
-    }
-    /* Ocultar e mostrar ao clique no botão de cada matéria */
-    .fadeIn{
-        -webkit-animation: fadeIn 3s ease-in-out;
-        -moz-animation: fadeIn 3s ease-in-out;
-        -o-animation: fadeIn 3s ease-in-out;
-        animation: fadeIn 3s ease-in-out;
-    }
-    @-webkit-keyframes fadeIn{
-        0%{
-        opacity: 0;
-        }
-        100%{
-        opacity: 1;
-        }
-    }
-    @-moz-keyframes fadeIn{
-        0%{
-        opacity: 0;
-        }
-        100%{
-        opacity: 1;
-        }
-    }
-    @-o-keyframes fadeIn{
-        0%{
-        opacity: 0;
-        }
-        100%{
-        opacity: 1;
-        }
-    }
-    @keyframes fadeIn{
-        0%{
-        opacity: 0;
-        }
-        100%{
-        opacity: 1;
-        }
-    }
-    .cimabaixo{
-        margin-top: 5%;
-    }
-    .form-contact-input{
-        font-size: 100%;
-    }
+}
 
-    h1, h2, h3{
-        font-family: "Arial";
-        text-align: justify;
-        color: #292929;
-        margin: 0px;
-        padding-top: 5%;
-        padding-bottom: 2%;
-        padding-left: 8%;
-        padding-right: 8%;
-        font-size: 155%;
-        text-indent: 4%;
-    }
-    div{
-        font-size: 120%;
-        font-weight: bold;
-    }
-    .blockeda{
-        clear: both;
-    } 
-    .centro{
-        text-align: center;
-    }
-    .baixo{
-        clear: both;
-    }   
-    .ocultar{
-        display: block;
-    }
-    .form-contact-input{
-        color: white;
-        background-color: black;
-        border: 1px solid black;
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-    }
-    .form-contact-textarea{
-        color: white;
-        background-color: black;
-        border: 1px solid black;
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-    }
-    .form-contact-button{
-        color: white;
-        background: black;
-        border-bottom: 1px solid white;
-        border-right: 1px solid white;
-        font-size: 20px;
-    }
-    header{
-        height: 600px;
-        height: 60vh;
-        justify-content: center;
-    }
-    footer, span{
-        font-size: 105%;
-        background-color: black;
-        color:white;
-    }
+/* texto */
+footer, span{
+    font-size: 105%;
+    background-color: black;
+    color:white;
+}
+ul li a{
+    color: white;
+}
+h2, h3{
+    padding-top: 1%;
+    margin: 0;
+}
+h1{
+    font-family: "Arial";
+    text-align: justify;
+    color: #292929;
+    margin: 0px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 155%;
+    text-indent: 4%;
+}
+
+/* menus */
+.menu1{
+    background-color: black;
+}
+.menu2{
+    background-color: black;
+}
+.menu2 ul li a{
+    color: white;
+}
+.nav{
+    display: none;
+}
+.distancia{
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+/* Tirar versão mobile */
+.esconderMobile{
+    display: none;
+}
+.esconder{
+    display: block;
+}
+.ocultar1{
+    display: block;
+}
+
+/* mudando cor do botão de voltar ao topo */
+#subirTopo{
+    background: black;
+    color: white;
+}
+
+/* luz branca que aparece quando inicia a página */
+.fadeIn{
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+}
+@-webkit-keyframes fadeIn{0%{ opacity: 0; }100%{ opacity: 1; }}
+@-moz-keyframes fadeIn{ 0% { opacity: 0; } 100% { opacity: 1;}}
+@-o-keyframes fadeIn{ 0% { opacity: 0; } 100% { opacity: 1; }}
+@keyframes fadeIn{ 0% {opacity: 0;} 100%{ opacity: 1; }}
+
+/* mudando a cor da área de contato */
+.form-contact-input{
+    font-size: 100%;
+}
+.form-contact-input{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.form-contact-textarea{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.form-contact-button{
+    color: white;
+    background: black;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    font-size: 20px;
+ }
 }
